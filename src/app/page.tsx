@@ -1,5 +1,6 @@
 import UsageContext from '@/state/usage/context'
 import UsageMobx from '@/state/usage/mobx'
+import UsageRecoil from '@/state/usage/recoil'
 import UsageRedux from '@/state/usage/redux'
 import React from 'react'
 
@@ -18,6 +19,10 @@ export default function Page() {
         <div className='w-full p-4 border rounded-2xl'>
           <div className='text-xs text-center'>Mobx</div>
           <div className='mt-4'><UsageMobx /></div>
+        </div>
+        <div className='w-full p-4 border rounded-2xl'>
+          <div className='text-xs text-center'>Recoil</div>
+          <div className='mt-4'><UsageRecoil /></div>
         </div>
       </div>
     </div>
