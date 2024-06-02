@@ -1,6 +1,5 @@
 'use client'
 
-import { Fragment } from "react";
 import { Provider, useDispatch, useSelector } from "react-redux";
 import { store, type RootState } from "../redux/store";
 import { decrement, increment } from "../redux/slice/counter";
