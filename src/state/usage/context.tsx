@@ -1,6 +1,6 @@
 'use client'
 
-import { CounterProvider, useCounter } from "../context/setup";
+import { CounterProvider, useCounter } from "../setup/context/setup";
 
 const CounterComponent = () => {
     const { count, increment, decrement } = useCounter();
