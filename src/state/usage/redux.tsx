@@ -1,8 +1,8 @@
 'use client'
 
 import { Fragment } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import type { RootState } from "../redux/store";
+import { Provider, useDispatch, useSelector } from "react-redux";
+import { store, type RootState } from "../redux/store";
 import { decrement, increment } from "../redux/slice/counter";
 
 const CounterComponent = () => {
@@ -21,8 +21,8 @@ const CounterComponent = () => {
 
 export default function UsageRedux() {
     return (
-        <Fragment>
+        <Provider store={store}>
             <CounterComponent />
-        </Fragment>
+        </Provider>
     );
 }
